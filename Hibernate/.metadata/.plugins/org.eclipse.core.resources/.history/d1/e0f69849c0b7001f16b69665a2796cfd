@@ -1,0 +1,11 @@
+package com.acte;
+import com.acte.service.Vechile;
+public class Main {
+
+	public static void main(String[] args) {
+     	Vechile name = new Vechile();
+          int res=name.wheels("two");
+          System.out.println(res);
+	}
+
+}

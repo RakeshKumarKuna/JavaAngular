@@ -1,0 +1,7 @@
+package com.acte.service;
+
+public class StaticEx {
+	public int id=1000;
+	public String studentname;
+    public String schoolname;
+}

@@ -1,0 +1,6 @@
+package hibernate.persistence.entity;
+@Entity
+public class Animal {
+int id;
+String name;
+}

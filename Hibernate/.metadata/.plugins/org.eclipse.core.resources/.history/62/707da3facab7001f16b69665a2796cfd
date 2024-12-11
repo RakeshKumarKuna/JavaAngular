@@ -1,0 +1,14 @@
+package com.atce;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class App {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+        Configuration config=new Configuration();
+        config.configure("com/atce/cfgs/hibernate.cfg.xml");
+        SessionFactory sf=config.buildSessionFactory();
+        Session ses=sf.openSession();
+    }
+}

@@ -1,0 +1,14 @@
+package com.acte.service;
+
+public class Vechile {
+	int id;
+	String name;
+	public int wheels(String type) {
+		String discription;
+		if(type=="two") {
+			return 2;
+		}
+		return 4;
+	}
+
+}

@@ -1,0 +1,20 @@
+package hiberante.persistence;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import hibernate.persistence.entity.Animal;
+
+public class App {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+        
+        Configuration config=new Configuration();
+        config.configure();
+        SessionFactory sf=config.buildSessionFactory();
+        Session ses=sf.openSession();
+        Animal obj=new Animal();
+        ses.save(obj);
+    }
+}

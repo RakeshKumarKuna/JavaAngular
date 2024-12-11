@@ -1,0 +1,32 @@
+package com.acte.service;
+
+/**
+ * 
+ * @author RakeshKumarKuna
+ *
+ */
+public class Vechile {
+	int id;
+	String name = "surya"; // instance variable
+	{
+		System.out.println("instance block"); // instance block
+	}
+
+	public Vechile() {
+		System.out.println("0 -param constucter");
+	}
+
+	public int wheels(String type) { // instace method
+		String name = "rakesh"; // local
+		System.out.println(name); //
+		if (type == "two") {
+			return 2;
+		} else {
+			return 4;
+		}
+	}
+
+}
+/*
+ * multiline comments
+ */

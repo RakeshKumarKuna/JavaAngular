@@ -1,0 +1,5 @@
+package hibernate.persistence.entity;
+
+public class Animal {
+
+}

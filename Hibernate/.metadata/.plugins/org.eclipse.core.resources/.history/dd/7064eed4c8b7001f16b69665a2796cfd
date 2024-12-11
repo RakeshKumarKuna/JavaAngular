@@ -1,0 +1,11 @@
+package com.atce.entity;
+
+import java.io.Serializable;
+
+public class Student implements Serializable{
+	
+	private int studentId;
+	private String studentName;
+	private String schoolName;
+
+}

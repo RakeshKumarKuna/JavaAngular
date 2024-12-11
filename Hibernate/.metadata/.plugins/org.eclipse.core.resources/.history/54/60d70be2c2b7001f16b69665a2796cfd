@@ -1,0 +1,26 @@
+package com.acte;
+import com.acte.service.StaticEx;     //cntl+shit+o
+
+public class Main {
+
+	public static void main(String[] args) {
+//     	Vechile name = new Vechile();
+ //        int res=name.wheels("two");
+//          //System.out.println(res);
+//          Date date=new Date();
+//          System.out.println(date);
+      StaticEx obj= new StaticEx();
+      obj.id=100;
+      obj.studentname="surya";
+      obj.schoolname="ssgm";
+      StaticEx obj2= new StaticEx();
+      obj2.id=101;
+      obj2.studentname="rakesh";
+      obj2.schoolname="ssgm";
+
+      System.out.println(obj.id + " "+ obj.studentname +" "+ obj.schoolname);
+		
+          
+	}
+
+}
