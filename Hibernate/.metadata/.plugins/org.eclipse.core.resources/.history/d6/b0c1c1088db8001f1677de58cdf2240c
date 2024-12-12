@@ -1,0 +1,12 @@
+package com.acte.service;
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Data
+public class Lombok {	
+	private int id;
+	private String name;
+
+}

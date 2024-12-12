@@ -21,6 +21,10 @@ public class Vechile {
 		System.out.println(name); //
 	   return type=="two"?2:4;     //ternary operator	
 	}
+	
+	public static  void  method1() {
+		System.out.println("static");
+	}
 
 }
 /*

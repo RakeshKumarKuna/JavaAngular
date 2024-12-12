@@ -25,13 +25,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="hiberante.persistence"/>
+			<item value="com.atce"/>
 		</list>
 		<list key="groupId">
-			<item value="hiberante"/>
+			<item value="Hibernateproj1"/>
 		</list>
 		<list key="artifactId">
-			<item value="persistence"/>
+			<item value="atce"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

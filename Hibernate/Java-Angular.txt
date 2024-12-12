@@ -1,0 +1,119 @@
+Java-Angular
+===============
+10-12-2024
+
+HIBERNATE:
+===========
+1.Hibernate Introduction
+        JDBC : Interacting with the db
+               sql  
+        Hibernate:
+              Orm framework
+              Object relation model/mapping
+              it will map out java class as db table, members map as                              coloums and objects as rows or records .
+           
+  
+2.Hibernate Basics :
+    class Demo{
+
+    }
+pojo  : plain old java object
+poji  : plain old java Interface
+entity: involving with db entity
+model : containes business logic model
+servlet: implementing servlet or dynamicservlet or httpservlet
+java bean  : 
+
+ class Demo implement serilization {
+  Demo(){
+  
+} 
+ private int id;
+  private String name="";
+  private String addr;
+   //setters
+   //getters
+ }
+
+spring bean:  
+============
+mvc:   model view controle
+====    db    ui    routing
+ 
+3.Hibernate Architecture
+     configure in 2 ways :
+         * xml driven config      (outdated)
+         * annotaion driven config       
+      xml config:
+      ============
+     1.Hiberate jars
+     2.hibernate configuration xml
+     3.entity (java class which is participating with db)
+     4.entity.hbm.xml
+     5.main application  
+     
+     annotaion config:
+     =================
+     1.Hiberate jars
+     2.hibernate configuration xml
+     3.entity (java class which is participating with db)
+     4.main application
+     
+    xml:
+         <firstname>jebin</firstname>
+          <lastname>jebin</lastname>
+          <phoneno>98954878<phoneno>
+    json:  
+          {
+            "firstname":"jebin",
+             "jebin":"jebin",
+           }
+          
+annotation:
+       @annotationname : data about data
+                         meta data
+@override
+public void drive(){
+}
+
+
+JDBC:
+ MYSQL=mysql-connector
+ oracle=ocjp
+Servers:
+    web server
+    Application Server 
+    Database Server    
+
+1. eclipse
+2. mysql
+3. sts sprint tool suite
+            
+      
+4.Hibernate Configuration  :      To configureing the hibernate framework it is used to bootstraping the hiberante framework
+ ==========================  
+             Configuration config=new Configuration()
+             config.configure("/src/main/hibernate.hbm.xml");      //to locate the hibernate configuration file 
+        
+5.Hibernate SessionFactory:
+===========================        
+             SessionFactory sf=config.buildSessionFactory();
+6.Hibernate Session:
+=====================
+             Session session=sf.openSession();
+    
+
+7.Hibernate Configuration Offline
+8.Hibernate with HBM
+9.Hibernate with Annotation
+10.Hibernate Validator
+11.Hibernate CRUD
+
+
+
+
+lombok
+annotation
+
+
+

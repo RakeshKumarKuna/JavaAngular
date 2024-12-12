@@ -1,0 +1,12 @@
+package com.acte.service;
+
+public class StringEx {
+
+	public static void main(String[] args) {
+		 String name="surya"; 
+          name.concat("kumar");
+		 System.out.println(name); 
+
+	}
+
+}

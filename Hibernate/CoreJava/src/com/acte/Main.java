@@ -1,7 +1,12 @@
 package com.acte;
+import com.acte.service.OopsEx;
 import com.acte.service.StaticEx;     //cntl+shit+o
 
 public class Main {
+	
+	public static void meth1() {
+		System.out.println("static method");
+	}
 
 	public static void main(String[] args) {
 //     	Vechile name = new Vechile();
@@ -21,7 +26,9 @@ public class Main {
       System.out.println(obj.id + " "+ obj.studentname +" "+ obj.schoolname+" "+obj.score);
       System.out.println(obj2.id + " "+ obj2.studentname +" "+ obj2.schoolname+" "+obj2.score);
       System.out.println(obj3.id + " "+ obj3.studentname +" "+ obj3.schoolname+" "+obj3.score);
-		
+     meth1();
+     OopsEx obj4=new OopsEx(84,"");
+     System.out.println();
           
 	}
 

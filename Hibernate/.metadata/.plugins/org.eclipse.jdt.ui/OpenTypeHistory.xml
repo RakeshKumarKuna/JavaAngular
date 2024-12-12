@@ -1,2 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+    <typeInfo handle="=persistence/C:\/Users\/kunar\/.m2\/repository\/com\/mysql\/mysql-connector-j\/8.3.0\/mysql-connector-j-8.3.0.jar=/maven.pomderived=/true=/=/maven.pomderived=/true=/=/javadoc_location=/jar:file:\/C:\/Users\/kunar\/.m2\/repository\/com\/mysql\/mysql-connector-j\/8.3.0\/mysql-connector-j-8.3.0-javadoc.jar\!\/=/=/maven.groupId=/com.mysql=/=/maven.artifactId=/mysql-connector-j=/=/maven.version=/8.3.0=/=/maven.scope=/compile=/&lt;com.mysql.cj.jdbc(Driver.class[Driver" modifiers="33" timestamp="1722410653649"/>
+</typeInfoHistroy>

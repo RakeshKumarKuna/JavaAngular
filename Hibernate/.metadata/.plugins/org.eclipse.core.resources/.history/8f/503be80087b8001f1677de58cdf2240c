@@ -1,0 +1,13 @@
+package com.acte.service;
+
+public class StringEx {
+
+	public static void main(String[] args) {
+		 String name="surya"; 
+         StringBuilder sb=new StringBuilder("surya");
+         sb.append("kumar");
+		 System.out.println(sb); 
+
+	}
+
+}

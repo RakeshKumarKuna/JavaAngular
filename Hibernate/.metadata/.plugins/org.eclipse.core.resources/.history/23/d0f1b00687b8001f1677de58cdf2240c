@@ -1,0 +1,12 @@
+package com.acte.service;
+
+public class StringEx {
+
+	public static void main(String[] args) {
+		 String name="surya"; 
+        for(int i=0;i<=name.length();i++) {
+        	System.out.println(name.charAt(i));
+        }
+	}
+
+}

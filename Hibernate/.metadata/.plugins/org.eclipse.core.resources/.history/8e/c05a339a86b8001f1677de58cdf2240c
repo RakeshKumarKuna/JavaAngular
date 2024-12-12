@@ -1,0 +1,13 @@
+package com.acte.service;
+
+public class StringEx {
+
+	public static void main(String[] args) {
+		 String name="surya";
+		 String nametwo="surya";
+		 String obj=new String("surya");
+		 System.out.println(name==obj); 
+
+	}
+
+}

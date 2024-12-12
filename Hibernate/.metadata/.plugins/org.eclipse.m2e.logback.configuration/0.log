@@ -602,3 +602,7 @@ Caused by: org.eclipse.core.runtime.OperationCanceledException: null
 2024-12-11 20:02:40,728 [Worker-108: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\kunar\eclipse-workspace\Project\JavaAngular\Hibernate\atce\src\test\resources
 2024-12-11 20:03:33,797 [Worker-92: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\kunar\eclipse-workspace\Project\JavaAngular\Hibernate\atce\src\main\resources
 2024-12-11 20:03:33,800 [Worker-92: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\kunar\eclipse-workspace\Project\JavaAngular\Hibernate\atce\src\test\resources
+2024-12-11 22:51:17,699 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped Server@47126012{STOPPING}[10.0.6,sto=0]
+2024-12-11 22:51:17,851 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@a08577c{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
+2024-12-11 22:51:17,997 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@146fbd47{/help,null,STOPPED}
+2024-12-12 18:04:31,378 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
