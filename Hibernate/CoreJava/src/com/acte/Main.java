@@ -1,4 +1,5 @@
 package com.acte;
+import com.acte.service.Lombok;
 import com.acte.service.OopsEx;
 import com.acte.service.StaticEx;     //cntl+shit+o
 
@@ -29,6 +30,8 @@ public class Main {
      meth1();
      OopsEx obj4=new OopsEx(84,"");
      System.out.println();
+     Lombok obj8=new Lombok();
+     obj8.s
           
 	}
 
