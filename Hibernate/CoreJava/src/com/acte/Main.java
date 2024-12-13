@@ -31,7 +31,7 @@ public class Main {
      OopsEx obj4=new OopsEx(84,"");
      System.out.println();
      Lombok obj8=new Lombok();
-     obj8.s
+  
           
 	}
 

@@ -47,11 +47,42 @@ mvc:   model view controle
       xml config:
       ============
      1.Hiberate jars
-     2.hibernate configuration xml
+     2.hibernate configuration xml:
+         <?xml version="1.0" encoding="UTF-8"?>
+	<!DOCTYPE hibernate-configuration SYSTEM 
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+	<hibernate-configuration>
+	<session-factory>
+	<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+	<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/rakesh</property>
+	<property name="hibernate.connection.username">root</property>
+	<property name="hibernate.connection.password">root</property>
+	<property name="show_sql">true</property>
+	<property name="format_sql">true</property>
+	<property name="hbm2ddl.auto">update</property>
+	<mapping class="com.krk.entity.ClassName" />
+	</session-factory>
+	</hibernate-configuration>
+
      3.entity (java class which is participating with db)
-     4.entity.hbm.xml
-     5.main application  
      
+     4.entity.hbm.xml
+       
+	<?xml version="1.0" encoding="UTF-8"?>
+	<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	<hibernate-mapping>
+	<class name="com.krk.entity.Product35" table="PRODUCT35">
+	<id name="pid" column="pid">
+	<generator class="increment"></generator>
+	</id>
+	<property name="pname" column="pname"></property>
+	<property name="pprice" column="pprice"></property>
+	<property name="pqty" column="pqty"></property>
+	</class>
+	</hibernate-mapping>
+    
      annotaion config:
      =================
      1.Hiberate jars
@@ -108,12 +139,13 @@ Servers:
 9.Hibernate with Annotation
 10.Hibernate Validator
 11.Hibernate CRUD
-
-
-
-
-lombok
+12.Assocation Mapping
+       
 annotation
+1. Jpa specification annotaions           
+2. hibernate specific annotations  
+3. thirdparty specfic annotation
+
 
 
 
