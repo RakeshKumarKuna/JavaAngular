@@ -1,0 +1,14 @@
+1.32.Custom Immutable Class
+1.33.Collection Framework - Collection Basics - Iterator Interface - Methods of Collection Interface
+1.List   1.multiple values either same or differenet allow duplicates
+2.Set   2.multiple values either same or differenet Not allow duplicates
+3.Map
+A] Array List B] Linked List C] Vector
+A] Hash Set B] Tree Set
+A] Hash Map B] Tree Map
+C] Hash table
+
+arrys:
+    Size id fixed
+    dont have methods to set the values
+    not thread safe

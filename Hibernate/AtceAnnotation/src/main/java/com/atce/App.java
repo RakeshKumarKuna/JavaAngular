@@ -29,6 +29,7 @@ public class App {
            st= ses.get(Student.class, 5) ; 
            //ses.remove(st);
            st.setStudentName("rakesh");
+           
            ses.persist(st);
            transaction.commit();  
        }catch (HibernateException e) {
