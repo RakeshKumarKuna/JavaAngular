@@ -11,14 +11,14 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table
+@Table(name = "PhoneNumber_annotationfour")
 public class PhoneNumber_annotation {
 	@Id
 	@GeneratedValue
 	private int phId;
 	private Long phno;
-	@ManyToOne(cascade = CascadeType.ALL,targetEntity = Person_annotation.class,fetch = FetchType.LAZY)
-	@JoinColumn(name = "personID",referencedColumnName ="pId")
+	@ManyToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
+	@JoinColumn(name = "person_Id",referencedColumnName = "pId")
 	private Person_annotation person;
 	public int getphId() {
 		return phId;

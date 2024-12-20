@@ -1,9 +1,0 @@
-package hibernate.persistence.entity;
-
-import jakarta.persistence.Entity;
-
-
-public class Animal {
-int id;
-String name;
-}

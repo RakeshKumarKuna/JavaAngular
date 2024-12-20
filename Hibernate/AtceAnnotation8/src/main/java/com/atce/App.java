@@ -20,12 +20,17 @@ public class App {
         Transaction transaction= ses.beginTransaction();;
        try {
        Docter doc=new Docter();
+       Docter doc1=new Docter();
        doc.setName("jebin");
+       doc1.setName("dhanu");
+      
        Paitent pat=new Paitent();
        pat.setpName("rakesh");
-       pat.setDocter(List.of(doc));
-       doc.setPaitent(List.of(pat));
-    	  ses.save(doc);
+       Paitent pat1=new Paitent();
+       pat1.setpName("surya");
+       pat.setDocter(Set.of(doc,doc1));
+       doc1.setPaitent(Set.of(pat,pat1));
+    	  ses.save(doc1);
            transaction.commit();
            System.out.println("record inserted");
        }catch (HibernateException e) {

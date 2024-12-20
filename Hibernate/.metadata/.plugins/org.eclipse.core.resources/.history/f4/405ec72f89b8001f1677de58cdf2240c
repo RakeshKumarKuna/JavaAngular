@@ -1,8 +1,0 @@
-package com.acte.service;
-
-public class OopsEx {
-
-privare int id;
-private String name;
-
-}

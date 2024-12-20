@@ -42,9 +42,4 @@ public class Student implements Serializable {
 	public void setSchoolName(String schoolName) {
 		this.schoolName = schoolName;
 	}
-
-	
-
-
-
 }

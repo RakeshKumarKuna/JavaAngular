@@ -1,6 +1,0 @@
-package hibernate.persistence.entity;
-
-public class Animal {
-int id;
-String name;
-}

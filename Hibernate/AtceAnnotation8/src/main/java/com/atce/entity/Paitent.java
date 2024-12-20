@@ -1,25 +1,29 @@
 package com.atce.entity;
 import java.util.List;
+import java.util.Set;
+
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumns;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table
+@Table(name = "paitent_annotation_one")
 public class Paitent {
 	@Id
 	@GeneratedValue
 	private Integer pID;
 	private String pName;
-	@ManyToMany(cascade = CascadeType.ALL,targetEntity = Paitent.class
-		
+	@ManyToMany(cascade = CascadeType.ALL,targetEntity = Docter.class
+		,fetch = FetchType.LAZY,mappedBy = "paitents"
 			)
-	private List<Docter> docter;
+	private Set<Docter> docter;
 	public Integer getpID() {
 		return pID;
 	}
@@ -32,10 +36,10 @@ public class Paitent {
 	public void setpName(String pName) {
 		this.pName = pName;
 	}
-	public List<Docter> getDocter() {
+	public Set<Docter> getDocter() {
 		return docter;
 	}
-	public void setDocter(List<Docter> docter) {
+	public void setDocter(Set<Docter> docter) {
 		this.docter = docter;
 	}
 

@@ -13,15 +13,10 @@ public class HashSetEx {
    set.add(84);
    set.add(95);
    set.add(84);
-   System.out.println(set);
-   System.out.println("----------------------");
-   Set<Integer> treeSet=new TreeSet();
-   treeSet.add(45);
-   treeSet.add(84);
-   treeSet.add(49);
-   treeSet.add(77);
-   System.out.println(treeSet);
-   
+   //System.out.println(set);
+  set.forEach(value->{
+	  System.out.println(value);
+  });
+   set.stream().filter(data->data%2==0).forEach(System.out::print);
 	}
-
 }
