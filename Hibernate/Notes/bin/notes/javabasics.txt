@@ -1,0 +1,305 @@
+09-12-2024
+============
+How JVM works?
+Type Of Applications
+
+  *console based application
+  *desktop application /standalone appliction
+  *web application /entrisprise applcaition
+  *mobile application
+
+
+Class:
+=======
+ - Class is program template.
+ -  Template comprises of sample data and logic, which you can implement and customize according to requirements.
+ //declaration
+    class Product
+    {
+
+    }
+Ex:
+---
+package com.java.Demo;
+import java.util.Date;
+class Demo{
+public static void main(String args[]){
+Demo obj=new Demo();
+System.out.println("Hello world !");
+}
+}
+- A class can contain 
+   
+ *varibales            instance variables and static variables
+
+ *methods              instance methods and static methods  
+
+ *constrcuters           no-arg constucters  arg constucters {3}
+
+ *blocks               instace block  and static block
+ 
+
+Objects:
+=========
+* Object is an instance of an class.
+* we can create an object with using "new" keyword. 
+   //declaration
+    classname obj=new classname();
+
+Varibales:
+===========
+Variables are memory locations to store values.
+
+Datatypes:
+==========
+    Primitive datatypes                non-primitive datatypes  :String ,arrays,class
+     numeric datatype
+         -Integer datatype
+              -byte      8 bits    -128-127     
+              -short      8 bits
+              -int        16bit
+              -long        32bit  l
+         -floating datatype 
+               -float     25.8548784
+               -double    65.48   d
+
+     non-numeric datatype
+          -boolean      true false
+          -character --> 'a';
+Operators
+       *Arthimetic Operators
+           +,-,*,/,%
+ 
+       *logical operators
+           
+
+       *bitwise operators
+       *instance Operator
+       *tenrany operator  
+       *Assignment operator
+         =   
+
+Packgage
+============
+package are used to store set of classes,interfaces together
+
+Constructor
+============
+- It is used for instantiation - creating of object.
+- It is a special type of method in class that executes automatically for every object.
+- Every class will have a constructor inside, which is known as "Default" constructor.
+- You can create an explicit constructor.
+     
+     *No Param constucter(defulat constucter)
+       classname(){
+         
+          }
+     *Param constucter
+        classname(params){
+                  
+          }
+
+10-12-2024:
+=============
+ScannerClass
+==============
+
+
+ScannerClass:
+   To accept input from the end user we use Scanner class 
+          Sccanner sc=new Scanner(System.in);
+          sc.nextInt();
+          sc.nextByte();
+          sc.nextShort();
+          sc.nextLong();     
+          sc.nextFloat();
+          sc.nextDouble();
+          sc.nextBoolean();     
+          sc.next();
+          sc.nextLine();
+
+
+
+return  Keyword:
+================
+ return values to the methods and come out from the block;
+         
+
+Conditional Statements
+=========================
+* if condition
+
+if(boolean){
+
+}
+
+* if else condition
+if(true){
+
+}
+else{
+
+}
+
+* switch
+     switch(condition){
+      case 1:{
+       }
+      case 2:{
+       }
+       case 3:{
+      }
+        |
+        |
+        |
+       case n:{
+       }
+       defulat :{
+       }
+    }
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="com.krk.entity.Product35" table="PRODUCT35">
+<id name="pid" column="pid">
+<generator class="increment"></generator>
+</id>
+<property name="pname" column="pname"></property>
+<property name="pprice" column="pprice"></property>
+<property name="pqty" column="pqty"></property>
+</class>
+</hibernate-mapping>
+   
+
+
+
+
+
+
+loops:
+======
+loops             iterators
+while
+=====
+while(condition){
+
+}
+do while:
+do(){
+sysop("sys")
+}while(condition);
+
+for
+====
+for(intilization;conditon;increment/decrement){
+  //statemnets
+}
+
+11-12-2024
+===============
+All Concepts
+
+TernaryOperator:
+     condition?satement1:satement2;
+
+comments:
+     compiler will avoide these lines
+    * single line comments
+    * multiline comments
+    * documentation comments
+
+static keyword:
+    static refers to continoues memory
+blocks
+type casting
+     
+String
+Arrays 
+Oops:
+    super keyword
+  1.Encapsulation
+  2.Abstraction
+  3.Inheritence
+  4.Polymorphism
+
+Access Specifiers :
+       public 
+       private
+       defulat
+       protected
+Interface:
+   1.Nomral Interfaces:
+       Interface having multiple abstract methods
+   2.Functional Interfaces:
+        This interace contanies one abstractr method.
+          @FunctionalInterface 
+          interface interfacename{
+          public abstract void meth1();
+         }
+   3.Marker Interface:
+         This is an  empty interface
+         Serilization
+         clonable
+         autoclosable
+           Scanner sc=new Scanner(System.in);
+           //
+           //
+           //
+           sc.close(); 
+
+ Java class:
+   class classname{
+    private int id;
+   }
+pojo: plain old java object
+poji: plain old java interface
+Entity: involves in the db operations
+Java Bean:
+
+  class CardDetiles implements Serilizable{
+   private int cardNo;
+   private String cvv;
+   //setter
+   //getter
+   //tostring
+   //no-arg constucter
+}
+
+Serialization
+Transient
+Exception Handling
+====================
+Exception Handling- try, catch, throw, throws, finally
+
+Core Java -45
+adv java -10     
+Hiberante -45   
+spring -45 
+springboot-60 
+Angular -45    
+React- 30  HTML CSS JS BOOTSRATP REACT        
+aws  assocaite 
+devops  git docker kubernates jenkins teraform 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

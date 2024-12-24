@@ -1,0 +1,79 @@
+                                     🎆  Hibernate and JPA 🎆
+                                     =========================
+
+1.Intro to Hibernate in action:
+===============================
+Hibernate was the inspiration behind the Java (now Jakarta) Persistence API, or JPA, and includes a complete implementation of the latest revision of this specification.
+
+* Hibernate implementation of the JPA-defined APIs, most importantly, of the interfaces                EntityManagerFactory and EntityManager.
+
+* Hibernate centered around the interfaces SessionFactory, which extends EntityManagerFactory, and Session, which extends EntityManager.
+
+
+* our persistence-related code comes in two layers:
+   1. entity class  : An entity is a Java class which represents data in a relational database  			table. 
+   2. a larger number of functions which interact with Hibernate’s APIs to perform the persistence                 	operations.
+
+2. Configuration and bootstrap : 
+===============================
+
+* Genrally we configure our hibernate application in two ways
+          a. xml driven configuration. 
+                       
+          b. annotation driven configuration.
+
+
+       * There’s several distinct ways to configure and bootstrap Hibernate.
+
+ 1.Using the standard JPA-defined XML :
+            chosen when portability between JPA implementations is important.
+
+ 2.Using the Configuration class to construct a SessionFactory :
+            When portability between JPA implementations is not important, this option is quicker, 		adds some flexibility
+ 
+ 3.Using the more complex APIs defined in org.hibernate.boot :
+             Used primarily by framework integrators.
+
+ 4.By letting the container take care of the bootstrap process and of injecting the SessionFactory  	or EntityManagerFactory :
+                                    Used in a container environment like WildFly.
+ 
+Including Hibernate in your project:
+---------------------------------------
+             1. Add hibernate dependency in your pom.xml or build.gradle
+             2. You need add respective JDBC Driver for your data base  
+             3. Configuration file (XML(Extensible Markup Language) or with using Configuration               				class with help of AvilableSettings Interface).
+             4.Entity class
+             5.Main class with persistence methods.
+
+    lets do the project setup 🎆
+
+
+Entity class:
+=============
+* we have to make a class as an entity we need  to specify the @entity annotation on the top of the class
+* and a class should contain one identifiers we can configure  with using @Id annotation.
+* if you want to generate id for the table we can use @Generator() with help of GenerationType enum
+  
+       Type                              DataType                      Use
+      ------                             --------                     ------
+ GenerationType.UUID                  UUID or String                 A Java UUID
+
+GenerationType.IDENTITY              Long or Integer               An identity or autoincrement col
+
+GenerationType.SEQUENCE              Long or Integer                A database sequence
+
+GenerationType.TABLE                  Long or Integer               A database table
+
+GenerationType.AUTO                  Long or Integer               Selects SEQUENCE, TABLE, or UUID        								   based on the identifier type and  								   capabilities of the database.
+
+
+SessionFactory:
+-----------------
+          A thread-safe (and immutable) representation of the mapping of the application domain model to a database. Acts as a factory for org.hibernate.Session instances. 
+              
+Session (org.hibernate.Session)
+-----------------------------------
+           A single-threaded, short-lived object conceptually modeling a "Unit of Work" (PoEAA). In Jakarta Persistence nomenclature, the Session is represented by an EntityManager.
+Behind the scenes, the Hibernate Session wraps a JDBC java.sql.Connection and acts as a factory for org.hibernate.Transaction instances. 
+
+          
