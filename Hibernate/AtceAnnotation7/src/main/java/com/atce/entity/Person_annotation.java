@@ -23,7 +23,6 @@ public class Person_annotation {
 	@Column(name = "personname")
 	private String name;
 	@OneToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY,mappedBy = "person")
-	// @JoinColumn(name = "person_id" ,referencedColumnName = "pId")
 	private Set<PhoneNumber_annotation> phno;
 
 	public int getpId() {
@@ -49,4 +48,6 @@ public class Person_annotation {
 	public void setPhno(Set<PhoneNumber_annotation> phno) {
 		this.phno = phno;
 	}
+
+	
 }

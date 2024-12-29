@@ -16,6 +16,7 @@ public class App {
         Configuration config=new Configuration();
         config.configure("com/atce/cfgs/hibernate.cfg.xml");
         SessionFactory sf=config.buildSessionFactory();
+    	sf.getSchemaManager().truncateMappedObjects();
         Session ses=sf.openSession();
         Transaction transaction= ses.beginTransaction();;
        try {

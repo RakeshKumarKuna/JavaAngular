@@ -8,15 +8,18 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
 import com.main.Utilis.Utils;
+import com.main.annotations.ProjectDetailes;
 import com.main.entity.Person;
 import com.main.entity.PhoneNumbers;
-
+@ProjectDetailes(author = "Rakesh Kumar Kuna",version = 1.0)
 class App {
 	public static void main(String[] args) {
 		SessionFactory sf = Utils.getSessionFactory();
+		sf.getSchemaManager().truncateMappedObjects();
 		Session ses = sf.openSession();
 		Transaction transaction = ses.beginTransaction();
 		try {
+		
 			Person per = new Person();
 			per.setPname("surya");
 			PhoneNumbers ph1 = new PhoneNumbers();

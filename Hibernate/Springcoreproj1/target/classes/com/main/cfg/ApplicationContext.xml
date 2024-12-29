@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+		<bean id="sb" class="com.main.beans.SpringBean"></bean>
+		<bean id="dt" class="java.util.Date">
+		<constructor-arg name="year" value="1995"></constructor-arg>
+		<constructor-arg name="month" value="9"></constructor-arg>
+		<constructor-arg name="day" value="12"></constructor-arg>
+		</bean>
+</beans>

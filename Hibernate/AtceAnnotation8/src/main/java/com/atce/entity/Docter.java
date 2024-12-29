@@ -1,12 +1,7 @@
 package com.atce.entity;
-
 import java.io.Serializable;
 import java.util.List;
 import java.util.Set;
-
-import org.hibernate.annotations.LazyCollection;
-import org.hibernate.annotations.LazyCollectionOption;
-
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -25,13 +20,13 @@ public class Docter implements Serializable {
 	@GeneratedValue
 	private Integer dId;
 	private String name;
-	@ManyToMany(cascade = CascadeType.ALL,targetEntity = Paitent.class,fetch = FetchType.LAZY)
-	@JoinTable(name = "doc_pat"
+	@ManyToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY,mappedBy = "docter")
+	/*@JoinTable(name = "doc_pat"
 	                      ,joinColumns = @JoinColumn(name="doc_id"
 	                                                                          ,referencedColumnName ="dId")
 	                       ,inverseJoinColumns =@JoinColumn(name="pat_id"
 	                                                                                       ,referencedColumnName = "pID")
-	                      )
+	                      )*/
 	private Set<Paitent> paitents;
 	public Integer getdId() {
 		return dId;

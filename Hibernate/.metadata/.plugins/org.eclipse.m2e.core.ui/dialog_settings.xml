@@ -2,9 +2,9 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\kunar\eclipse-workspace\Project\JavaAngular\Hibernate\AtceAnnotation"/>
 			<item value="C:\Users\kunar\eclipse-workspace\Project\JavaAngular\Hibernate\atce"/>
 			<item value="C:\Users\kunar\eclipse-workspace\Project\JavaAngular\Hibernate\springcore02"/>
-			<item value="C:\Users\kunar\eclipse-workspace\Project\JavaAngular\Hibernate\AtceAnnotation"/>
 			<item value="C:\Users\kunar\eclipse-workspace\Project\JavaAngular\Hibernate\java"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -30,19 +30,12 @@
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
 			<item value="com.main"/>
-			<item value="com.servletone"/>
-			<item value="com.spring"/>
-			<item value="com.jdbc"/>
 		</list>
 		<list key="groupId">
 			<item value="com"/>
 		</list>
 		<list key="artifactId">
-			<item value="hibernateintro"/>
-			<item value="projectone"/>
-			<item value="servletone"/>
-			<item value="springcore01"/>
-			<item value="jdbcSimpleSatement"/>
+			<item value="Springcoreproj1"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

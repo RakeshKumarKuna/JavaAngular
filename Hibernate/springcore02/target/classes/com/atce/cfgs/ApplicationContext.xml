@@ -3,8 +3,13 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 		https://www.springframework.org/schema/beans/spring-beans.xsd">
-	<bean id="greet" class="com.atce.beans.Greeting" >
-
+		<bean id="greet" class="com.atce.beans.Greeting"></bean>
+	<bean id="single" class="com.atce.beans.Singleton" >
+<!-- 	 <constructor-arg name="id" value="89"></constructor-arg> -->
+<!-- 	 <constructor-arg name="name" value="rakesh"></constructor-arg> -->
+<property name="id" value="99"  ></property>
+<property name="name" value="sujrya"  ></property>
 	</bean>
-
+ 	<bean id="dt" class="java.util.Date"></bean> 
+ 	
 </beans>

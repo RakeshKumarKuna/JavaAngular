@@ -1,13 +1,8 @@
 package com.atce.entity;
-import java.util.List;
 import java.util.Set;
-
-import org.hibernate.annotations.LazyCollection;
-import org.hibernate.annotations.LazyCollectionOption;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToMany;
@@ -20,9 +15,7 @@ public class Paitent {
 	@GeneratedValue
 	private Integer pID;
 	private String pName;
-	@ManyToMany(cascade = CascadeType.ALL,targetEntity = Docter.class
-		,fetch = FetchType.LAZY,mappedBy = "paitents"
-			)
+	@ManyToMany(cascade = CascadeType.ALL)
 	private Set<Docter> docter;
 	public Integer getpID() {
 		return pID;

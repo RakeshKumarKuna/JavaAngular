@@ -18,8 +18,9 @@ public class PhoneNumber_annotation {
 	private int phId;
 	private Long phno;
 	@ManyToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
-	@JoinColumn(name = "person_Id",referencedColumnName = "pId")
-	private Person_annotation person;
+	//@JoinColumn(name = "person_Id",referencedColumnName = "pId")
+	private Person_annotation person; 
+
 	public int getphId() {
 		return phId;
 	}
@@ -38,4 +39,5 @@ public class PhoneNumber_annotation {
 	public void setPerson(Person_annotation person) {
 		this.person = person;
 	}
+	
 }
