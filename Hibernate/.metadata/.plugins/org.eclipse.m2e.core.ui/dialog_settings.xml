@@ -35,6 +35,9 @@
 			<item value="com"/>
 		</list>
 		<list key="artifactId">
+			<item value="sprignweb1"/>
+			<item value="springweb1"/>
+			<item value="springweb"/>
 			<item value="Springcoreproj1"/>
 		</list>
 		<list key="projectNameTemplate">
