@@ -35,6 +35,8 @@
 			<item value="com"/>
 		</list>
 		<list key="artifactId">
+			<item value="springwebproj1"/>
+			<item value="springwebone"/>
 			<item value="sprignweb1"/>
 			<item value="springweb1"/>
 			<item value="springweb"/>

@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="jakarta.persistence.Enumerated"/>
-    <fullyQualifiedTypeName name="com.atce.entity.DayOfWeek"/>
-    <fullyQualifiedTypeName name="com.atce.beans.Greeting"/>
-    <fullyQualifiedTypeName name="com.spring.beans.Student"/>
-    <fullyQualifiedTypeName name="org.hibernate.cfg.Configuration"/>
     <fullyQualifiedTypeName name="com.mysql.cj.xdevapi.SessionFactory"/>
     <fullyQualifiedTypeName name="org.hibernate.Session"/>
     <fullyQualifiedTypeName name="org.hibernate.Transaction"/>
@@ -35,7 +30,6 @@
     <fullyQualifiedTypeName name="jakarta.persistence.JoinTable"/>
     <fullyQualifiedTypeName name="jakarta.persistence.JoinColumn"/>
     <fullyQualifiedTypeName name="com.atce.beans.Singleton"/>
-    <fullyQualifiedTypeName name="com.main.entity.User"/>
     <fullyQualifiedTypeName name="com.main.entity.Profile"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.main.entity.Person"/>
@@ -57,7 +51,13 @@
     <fullyQualifiedTypeName name="com.main.cfg.CustomConfiguration"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="org.springframework.cglib.proxy.Dispatcher"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
+    <fullyQualifiedTypeName name="com.main.entity.User"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
 </qualifiedTypeNameHistroy>

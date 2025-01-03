@@ -19,5 +19,8 @@
   </div>
 </form>
 </div>
+<div>
+<span>${msg}</span>
+</div>
 </body>
 </html>
