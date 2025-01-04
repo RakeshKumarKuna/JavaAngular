@@ -35,6 +35,7 @@
 			<item value="com"/>
 		</list>
 		<list key="artifactId">
+			<item value="springsecutitysetup"/>
 			<item value="springwebproj1"/>
 			<item value="springwebone"/>
 			<item value="sprignweb1"/>
@@ -76,5 +77,18 @@
 	<section name="org.eclipse.m2e.core.pom.overview">
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\kunar\Downloads\spring-security-5.4.3\spring-security-5.4.3\samples\xml\insecure"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
 	</section>
 </section>
